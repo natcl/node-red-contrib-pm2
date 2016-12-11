@@ -25,7 +25,6 @@ module.exports = function(RED) {
                 }
                 if (msg.payload.startsWith('start')) {
                     var start_proc = msg.payload.split(' ')[1];
-                    node.warn(start_proc);
                     pm2.start(start_proc, function(err) {
                         if (err) {
                             node.error('PM2: ' + err);
@@ -35,7 +34,6 @@ module.exports = function(RED) {
                 }
                 if (msg.payload.startsWith('stop')) {
                     var stop_proc = msg.payload.split(' ')[1];
-                    node.warn(stop_proc);
                     pm2.stop(stop_proc, function(err) {
                         if (err) {
                             node.error('PM2: ' + err);
@@ -45,7 +43,6 @@ module.exports = function(RED) {
                 }
                 if (msg.payload.startsWith('restart')) {
                     var restart_proc = msg.payload.split(' ')[1];
-                    node.warn(restart_proc);
                     pm2.restart(restart_proc, function(err) {
                         if (err) {
                             node.error('PM2: ' + err);

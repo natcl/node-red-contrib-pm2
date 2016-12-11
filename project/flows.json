@@ -23,8 +23,8 @@
         "z": "5880d5c8.309f9c",
         "name": "",
         "active": true,
-        "console": "false",
-        "complete": "false",
+        "console": "true",
+        "complete": "payload",
         "x": 842.5,
         "y": 144,
         "wires": []

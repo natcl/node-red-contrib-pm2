@@ -123,5 +123,24 @@
                 "2d40be1.1c57742"
             ]
         ]
+    },
+    {
+        "id": "1b24c287.ff9405",
+        "type": "inject",
+        "z": "5880d5c8.309f9c",
+        "name": "",
+        "topic": "",
+        "payload": "start pacho",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 435,
+        "y": 273,
+        "wires": [
+            [
+                "2d40be1.1c57742"
+            ]
+        ]
     }
 ]
