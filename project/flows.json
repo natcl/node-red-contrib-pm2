@@ -1,0 +1,146 @@
+[
+    {
+        "id": "5880d5c8.309f9c",
+        "type": "tab",
+        "label": "Flow 1"
+    },
+    {
+        "id": "2d40be1.1c57742",
+        "type": "pm2-node",
+        "z": "5880d5c8.309f9c",
+        "name": "",
+        "x": 619.5,
+        "y": 143.03125,
+        "wires": [
+            [
+                "8bc0338d.63cd"
+            ]
+        ]
+    },
+    {
+        "id": "8bc0338d.63cd",
+        "type": "debug",
+        "z": "5880d5c8.309f9c",
+        "name": "",
+        "active": true,
+        "console": "false",
+        "complete": "false",
+        "x": 842.5,
+        "y": 144,
+        "wires": []
+    },
+    {
+        "id": "a54959e6.b291f",
+        "type": "inject",
+        "z": "5880d5c8.309f9c",
+        "name": "",
+        "topic": "",
+        "payload": "stop vim",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 427,
+        "y": 140,
+        "wires": [
+            [
+                "2d40be1.1c57742"
+            ]
+        ]
+    },
+    {
+        "id": "1e0eb29f.108b3d",
+        "type": "inject",
+        "z": "5880d5c8.309f9c",
+        "name": "",
+        "topic": "",
+        "payload": "start vim",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 426,
+        "y": 183,
+        "wires": [
+            [
+                "2d40be1.1c57742"
+            ]
+        ]
+    },
+    {
+        "id": "bb338185.750b2",
+        "type": "inject",
+        "z": "5880d5c8.309f9c",
+        "name": "",
+        "topic": "",
+        "payload": "list",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 398,
+        "y": 340,
+        "wires": [
+            [
+                "2d40be1.1c57742"
+            ]
+        ]
+    },
+    {
+        "id": "459aa22e.195b74",
+        "type": "inject",
+        "z": "5880d5c8.309f9c",
+        "name": "",
+        "topic": "",
+        "payload": "stop vimdsad",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 423,
+        "y": 91,
+        "wires": [
+            [
+                "2d40be1.1c57742"
+            ]
+        ]
+    },
+    {
+        "id": "93304e29.745868",
+        "type": "inject",
+        "z": "5880d5c8.309f9c",
+        "name": "",
+        "topic": "",
+        "payload": "restart vim",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 421,
+        "y": 226,
+        "wires": [
+            [
+                "2d40be1.1c57742"
+            ]
+        ]
+    },
+    {
+        "id": "1b24c287.ff9405",
+        "type": "inject",
+        "z": "5880d5c8.309f9c",
+        "name": "",
+        "topic": "",
+        "payload": "start pacho",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 435,
+        "y": 273,
+        "wires": [
+            [
+                "2d40be1.1c57742"
+            ]
+        ]
+    }
+]

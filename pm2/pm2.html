@@ -1,0 +1,27 @@
+<script type="text/javascript">
+    RED.nodes.registerType('pm2-node',{
+        category: 'function',
+        color: '#d8bfd8',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "debug.png",
+        label: function() {
+            return this.name||"pm2";
+        },
+        paletteLabel: "pm2"
+    });
+</script>
+
+<script type="text/x-red" data-template-name="pm2-node">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="pm2-node">
+    <p>A simple node that converts the message payloads into all lower-case characters</p>
+</script>
