@@ -12,7 +12,6 @@ module.exports = function(RED) {
                 }
 
                 if (msg.payload === 'list') {
-                    node.warn('list');
                     pm2.list(function(err, processDescriptionList) {
                         if (err) {
                             node.error('PM2: ' + err);
