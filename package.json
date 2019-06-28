@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "A Node-RED node to control the pm2 process manager",
   "dependencies": {
-    "pm2": "2.1.6"
+    "pm2": "3.5.1"
   },
   "repository": {
     "type": "git",
